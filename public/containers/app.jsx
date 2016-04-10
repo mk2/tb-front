@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import Sidebar from "./components/sidebar.jsx!";
-import Content from "./components/content.jsx!";
-import Footer from "./components/footer.jsx!";
+import Sidebar from "../components/sidebar.jsx!";
+import Content from "../components/content.jsx!";
+import Footer from "../components/footer.jsx!";
 
 class App extends React.Component {
 
@@ -27,7 +27,7 @@ class App extends React.Component {
     return (
       <div style={this.appStyle()}>
         <div style={this.wrapperStyle()}>
-          <Sidebar tbfront={tbfront} isShowDummy={true} />
+          <Sidebar results={tbfront.articles} />
           <Content />
         </div>
         <Footer />

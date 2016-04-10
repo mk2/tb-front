@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, PropTypes } from "react";
 
 /**
  * Sidebar element component
@@ -34,7 +34,9 @@ class SidebarSearch extends Component {
 
   render() {
     return (
-      <div></div>
+      <div>
+        <input type="text" />
+      </div>
     );
   }
 }
@@ -79,20 +81,16 @@ export default class Sidebar extends Component {
   }
 
   render() {
-    if (this.props.isShowDummy) {
-      return (
-        <ul style={this.style()}>
-        {this.dummyData().map(result => {
-          return <SidebarElement key={result.id} data={result} />
-        })}
-        </ul>
-      );
-    } else {
-      return (
-        <div style={this.style()}>
-          sidebar
-        </div>
-      );
-    }
+    return (
+      <ul style={this.style()}>
+      {this.props.results.map(result => {
+        return <SidebarElement key={result.id} data={result} />
+      })}
+      </ul>
+    );
   }
 }
+
+Sidebar.propTypes = {
+  results: PropTypes.array.isRequired
+};
