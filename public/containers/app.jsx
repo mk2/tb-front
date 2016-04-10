@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import * as Actions from "../actions/index";
 import Sidebar from "../components/sidebar.jsx!";
 import Content from "../components/content.jsx!";
+import Header from "../components/header.jsx!";
 import Footer from "../components/footer.jsx!";
 
 class App extends React.Component {
@@ -28,6 +29,7 @@ class App extends React.Component {
     const { tbfront, actions } = this.props;
     return (
       <div style={this.appStyle()}>
+        <Header />
         <div style={this.wrapperStyle()}>
           <Sidebar results={tbfront.articles} />
           <Content />
