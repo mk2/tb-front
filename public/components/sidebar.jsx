@@ -48,32 +48,6 @@ class SidebarSearch extends Component {
  */
 export default class Sidebar extends Component {
 
-  dummyData() {
-    return [
-      {
-        id: "01",
-        title: "Dummy Article 01",
-        brief: "Dummy article desc",
-        author: "Dummy Author",
-        date: "2016/04/10 18:11 JST"
-      },
-      {
-        id: "02",
-        title: "Dummy Article 02",
-        brief: "Dummy article desc",
-        author: "Dummy Author",
-        date: "2016/04/10 10:11 JST"
-      },
-      {
-        id: "03",
-        title: "Dummy Article 03",
-        brief: "Dummy article desc",
-        author: "Dummy Author",
-        date: "2016/04/09 18:11 JST"
-      }
-    ];
-  }
-
   style() {
     return {
       backgroundColor: "#3A4F5C"
