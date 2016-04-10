@@ -2,7 +2,7 @@
 const initialState = {
   articles: [
     {
-      id: "01",
+      id: 1,
       title: "Dummy Article 01",
       brief: "Dummy article desc",
       author: "Dummy Author",
@@ -10,7 +10,7 @@ const initialState = {
       content: "oooookay"
     },
     {
-      id: "02",
+      id: 2,
       title: "Dummy Article 02",
       brief: "Dummy article desc",
       author: "Dummy Author",
@@ -18,7 +18,7 @@ const initialState = {
       content: "this is content"
     },
     {
-      id: "03",
+      id: 3,
       title: "Dummy Article 03",
       brief: "Dummy article desc",
       author: "Dummy Author",

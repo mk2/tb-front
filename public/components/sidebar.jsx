@@ -32,10 +32,20 @@ class SidebarElement extends Component {
  */
 class SidebarSearch extends Component {
 
+  style() {
+    return {
+      display: "inline-blodk",
+      border: "1px solid transparent",
+      background: "transparent",
+      width: "100%",
+      WebkitTapHighlightColor: "transparent"
+    };
+  }
+
   render() {
     return (
       <div>
-        <input type="text" />
+        <input style={this.style()} type="text" placeholder="Search" />
       </div>
     );
   }
@@ -56,11 +66,14 @@ export default class Sidebar extends Component {
 
   render() {
     return (
-      <ul style={this.style()}>
-      {this.props.results.map(result => {
-        return <SidebarElement key={result.id} data={result} />
-      })}
-      </ul>
+      <div style={this.style()}>
+        <SidebarSearch />
+        <ul>
+        {this.props.results.map(result => {
+          return <SidebarElement key={result.id} data={result} />
+        })}
+        </ul>
+      </div>
     );
   }
 }

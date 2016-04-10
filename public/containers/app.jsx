@@ -1,5 +1,7 @@
-import React from "react";
+import React, { PropTypes } from "react";
+import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
+import * as Actions from "../actions/index";
 import Sidebar from "../components/sidebar.jsx!";
 import Content from "../components/content.jsx!";
 import Footer from "../components/footer.jsx!";
@@ -34,8 +36,12 @@ class App extends React.Component {
       </div>
     );
   }
-
 }
+
+App.propTypes = {
+  tbfront: PropTypes.object.isRequired,
+  actions: PropTypes.object.isRequired
+};
 
 function mapStateToProps(state) {
   return {
@@ -43,6 +49,13 @@ function mapStateToProps(state) {
   }
 }
 
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(Actions, dispatch)
+  }
+}
+
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(App)
