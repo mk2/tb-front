@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React, { Component, PropTypes } from "react";
 
-export default class Content extends Component {
+const Content = React.createClass({
 
   style() {
     return {
       flex: 1
     };
-  }
+  },
 
   render() {
     return (
@@ -14,5 +14,11 @@ export default class Content extends Component {
       </div>
     );
   }
+});
 
-}
+Content.propTypes = {
+  article: PropTypes.object.isRequired,
+  actions: PropTypes.object.isRequired
+};
+
+export default Content;

@@ -32,7 +32,7 @@ class App extends React.Component {
         <Header />
         <div style={this.wrapperStyle()}>
           <Sidebar results={tbfront.articles} />
-          <Content />
+          <Content article={[]} actions={[]} />
         </div>
         <Footer />
       </div>

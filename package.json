@@ -14,6 +14,7 @@
       "baseURL": "public"
     },
     "dependencies": {
+      "elemental": "npm:elemental@^0.5.14",
       "jsx": "github:floatdrop/plugin-jsx@^1.2.1",
       "react": "npm:react@^15.0.1",
       "react-dom": "npm:react-dom@^15.0.1",

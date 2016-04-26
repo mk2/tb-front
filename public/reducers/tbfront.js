@@ -7,7 +7,7 @@ const initialState = {
       brief: "Dummy article desc",
       author: "Dummy Author",
       date: "2016/04/10 18:11 JST",
-      content: "oooookay"
+      content: "### Hello, world"
     },
     {
       id: 2,
@@ -15,7 +15,7 @@ const initialState = {
       brief: "Dummy article desc",
       author: "Dummy Author",
       date: "2016/04/10 10:11 JST",
-      content: "this is content"
+      content: "**this is content**"
     },
     {
       id: 3,
@@ -23,10 +23,16 @@ const initialState = {
       brief: "Dummy article desc",
       author: "Dummy Author",
       date: "2016/04/09 18:11 JST",
-      content: "世界平和"
+      content: "- 世界平和"
     }
   ],
   config: {
+    sidebar: {
+
+    },
+    content: {
+
+    }
   }
 };
 

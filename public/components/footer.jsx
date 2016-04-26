@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Footer extends Component {
+const Footer = React.createClass({
 
   style() {
     return {
@@ -9,7 +9,7 @@ export default class Footer extends Component {
       color: "#EEEEEE",
       backgroundColor: "#263238"
     };
-  }
+  },
 
   render() {
     return (
@@ -19,4 +19,6 @@ export default class Footer extends Component {
     );
   }
 
-}
+});
+
+export default Footer;
