@@ -23,6 +23,8 @@ System.config({
     "react-dom": "npm:react-dom@15.0.1",
     "react-redux": "npm:react-redux@4.4.2",
     "redux": "npm:redux@3.4.0",
+    "redux-persist": "npm:redux-persist@3.0.3",
+    "redux-thunk": "npm:redux-thunk@2.0.1",
     "github:floatdrop/plugin-jsx@1.2.1": {
       "react-tools": "npm:react-tools@0.13.3"
     },
@@ -402,6 +404,10 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "source-map": "npm:source-map@0.1.31"
     },
+    "npm:lodash@4.11.2": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:lodash@4.9.0": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -569,6 +575,11 @@ System.config({
       "private": "npm:private@0.1.6",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "source-map": "npm:source-map@0.5.5"
+    },
+    "npm:redux-persist@3.0.3": {
+      "json-stringify-safe": "npm:json-stringify-safe@5.0.1",
+      "lodash": "npm:lodash@4.11.2",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:redux@3.4.0": {
       "lodash": "npm:lodash@4.9.0",
