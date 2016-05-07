@@ -26,12 +26,12 @@ class App extends React.Component {
   }
 
   render() {
-    const { tbfront, actions } = this.props;
+    const { articles, tbfront, actions } = this.props;
     return (
       <div style={this.appStyle()}>
         <Header />
         <div style={this.wrapperStyle()}>
-          <Sidebar results={tbfront.articles} />
+          <Sidebar results={articles} />
           <Content article={[]} actions={[]} />
         </div>
         <Footer />
@@ -40,9 +40,16 @@ class App extends React.Component {
   }
 }
 
+App.defaultProps = {
+  tbfront: {},
+  articles: [],
+  actions: {},
+}
+
 App.propTypes = {
   tbfront: PropTypes.object.isRequired,
-  actions: PropTypes.object.isRequired
+  articles: React.PropTypes.array.isRequired,
+  actions: PropTypes.object.isRequired,
 };
 
 function mapStateToProps(state) {

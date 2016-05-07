@@ -14,13 +14,11 @@
       "baseURL": "public"
     },
     "dependencies": {
-      "elemental": "npm:elemental@^0.5.14",
       "jsx": "github:floatdrop/plugin-jsx@^1.2.1",
       "react": "npm:react@^15.0.1",
       "react-dom": "npm:react-dom@^15.0.1",
       "react-redux": "npm:react-redux@^4.4.2",
       "redux": "npm:redux@^3.4.0",
-      "redux-persist": "npm:redux-persist@^3.0.3",
       "redux-thunk": "npm:redux-thunk@^2.0.1"
     },
     "devDependencies": {
